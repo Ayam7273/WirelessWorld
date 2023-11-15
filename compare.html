@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Wireless World</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- stylesheet css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/compare.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- google web font css -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- table css -->
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 0px;
+        }
+        
+        #table {
+            display: none;
+        }
+    </style>
+    <!-- phone specifications script -->
+
+    <script>
+        const samsung = ["Released 2021, January 29", "Android 11, One UI 3.1", "227g, 8.9mm thickness", "6.8", "128GB/256GB/512GB storage", "GSM / LTE / 5G", "108 MP", "40 MP", "5000 mAh", "Fast Charging 25W"];
+        const iphone = ["Released 2020, November 13", "IOS 14.1", "228g,7.4mm thickness", "6.7", "128GB/256GB/512GB storage", "GSM / LTE / 5G", "12 MP", "12 MP", "3687 mAh", "Fast Charging 20W"];
+
+        function showMessage() {
+            document.getElementById("table").style.display = "block";
+            var phone = document.getElementById("phone").value;
+            display_message.innerHTML = phone;
+
+            if (phone == "Galaxy S21 Ultra") {
+                document.getElementById("release").innerHTML = samsung[0];
+                document.getElementById("os").innerHTML = samsung[1];
+                document.getElementById("size").innerHTML = samsung[2];
+                document.getElementById("display").innerHTML = samsung[3];
+                document.getElementById("storage").innerHTML = samsung[4];
+                document.getElementById("network").innerHTML = samsung[5];
+                document.getElementById("camera").innerHTML = samsung[6];
+                document.getElementById("selfie").innerHTML = samsung[7];
+                document.getElementById("type").innerHTML = samsung[8];
+                document.getElementById("charge").innerHTML = samsung[9];
+            } else if (phone == "Iphone 12 pro max") {
+                document.getElementById("release").innerHTML = iphone[0];
+                document.getElementById("os").innerHTML = iphone[1];
+                document.getElementById("size").innerHTML = iphone[2];
+                document.getElementById("display").innerHTML = iphone[3];
+                document.getElementById("storage").innerHTML = iphone[4];
+                document.getElementById("network").innerHTML = iphone[5];
+                document.getElementById("camera").innerHTML = iphone[6];
+                document.getElementById("selfie").innerHTML = iphone[7];
+                document.getElementById("type").innerHTML = iphone[8];
+                document.getElementById("charge").innerHTML = iphone[9];
+            }
+
+            var phone2 = document.getElementById("phone2").value;
+            display_text.innerHTML = phone2;
+
+            if (phone2 == "Galaxy S21 Ultra") {
+                document.getElementById("release1").innerHTML = samsung[0];
+                document.getElementById("os1").innerHTML = samsung[1];
+                document.getElementById("size1").innerHTML = samsung[2];
+                document.getElementById("display1").innerHTML = samsung[3];
+                document.getElementById("storage1").innerHTML = samsung[4];
+                document.getElementById("network1").innerHTML = samsung[5];
+                document.getElementById("camera1").innerHTML = samsung[6];
+                document.getElementById("selfie1").innerHTML = samsung[7];
+                document.getElementById("type1").innerHTML = samsung[8];
+                document.getElementById("charge1").innerHTML = samsung[9];
+            } else if (phone2 == "Iphone 12 pro max") {
+                document.getElementById("release1").innerHTML = iphone[0];
+                document.getElementById("os1").innerHTML = iphone[1];
+                document.getElementById("size1").innerHTML = iphone[2];
+                document.getElementById("display1").innerHTML = iphone[3];
+                document.getElementById("storage1").innerHTML = iphone[4];
+                document.getElementById("network1").innerHTML = iphone[5];
+                document.getElementById("camera1").innerHTML = iphone[6];
+                document.getElementById("selfie1").innerHTML = iphone[7];
+                document.getElementById("type1").innerHTML = iphone[8];
+                document.getElementById("charge1").innerHTML = iphone[9];
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt=""/>
+          </a>
+            <li>
+                <a href="index.html">
+                    <div class="arrow-bg">
+                        <img src="images/arrow.svg" alt="">
+                    </div>
+                </a>
+            </li>
+    
+        </nav>
+    </div>
+
+    <!-- Comparison -->
+    <section class="compare">
+        <h3 style="text-align: center;">COMPARE PHONES</h3>
+        <div class="row">
+
+            <div class="col-md-2 col-md-2 col-sm-12">
+                <br><br><br><br><br>
+                <table id="table">
+                    <tr>
+                        <th colspan="2">Name</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Released</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Operating System</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Size</td>
+                        <td>Body</td>
+                    </tr>
+                    <tr>
+                        <th>Display</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Storage</th>
+                    </tr>
+                    <tr>
+                        <th>NETWORK</th>
+                        <th>Technology</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">CAMERA</td>
+                        <td>Main</td>
+                    </tr>
+                    <tr>
+                        <th>Selfie</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">BATTERY</td>
+                        <td>Type</td>
+                    </tr>
+                    <tr>
+                        <th>Charging</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-4 col-md-4 col-sm-12">
+                <form class="form">
+                    <label>CHOOSE PHONE</label>
+                    <select name="first" id="phone" class="form-control">
+		    <option value="Galaxy S21 Ultra" selected="selected">Galaxy S21 Ultra</option>
+			<option value="Iphone 12 pro max" selected='selected'>Iphone 12 pro max</option>
+		</select>
+                </form>
+                <p><span id="display_message"></span> </p>
+                <p><span id="release"></span> </p>
+                <p><span id="os"></span> </p>
+                <p><span id="size"></span> </p>
+                <p><span id="display"></span> </p>
+                <p><span id="storage"></span> </p>
+                <p><span id="network"></span> </p>
+                <p><span id="camera"></span> </p>
+                <p><span id="selfie"></span> </p>
+                <p><span id="type"></span> </p>
+                <p><span id="charge"></span> </p>
+            </div>
+            <div class="col-md-4 col-md-4 col-sm-12">
+                <form class="form">
+                    <label>CHOOSE PHONE</label>
+                    <select name="first" id="phone2" class="form-control">
+    <option value="Iphone 12 pro max" selected='selected'>Iphone 12 pro max</option>
+	<option value="Galaxy S21 Ultra" selected="selected">Galaxy S21 Ultra</option>
+</select>
+                </form>
+                <p><span id="display_text"></span> </p>
+                <p><span id="release1"></span> </p>
+                <p><span id="os1"></span> </p>
+                <p><span id="size1"></span> </p>
+                <p><span id="display1"></span> </p>
+                <p><span id="storage1"></span> </p>
+                <p><span id="network1"></span> </p>
+                <p><span id="camera1"></span> </p>
+                <p><span id="selfie1"></span> </p>
+                <p><span id="type1"></span> </p>
+                <p><span id="charge1"></span> </p>
+                <br>
+            </div>
+            <div class="col-md-12 col-md-12 col-sm-12" style="display: inline-block; margin-left: -90px;">
+                <input id="comp" type="button" onclick="showMessage()" class="btn btn-default" value="Compare" />
+            </div>
+
+
+        </div>
+    </section>
+
+
+</body>
+
+</html>

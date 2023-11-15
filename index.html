@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wireless World</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"
+          ><img src="images/logo.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav">
+        
+            <li class="nav-item active">
+              <a class="nav-link" href="#categories"
+                >Brands <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#smartphone"
+                >Smartphone <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#laptop"
+                >Laptop <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="compare.html">
+                Compare <span class="sr-only">(current)</span>
+              </a>
+            </li>
+
+            <div class="main">
+              <div class="views">
+                  <img src="images/eye.svg"> 
+                  <div id="visitor-count">0</div>
+              </div>
+              <div class="bx bx-menu" id="menu-icon"></div>
+          </div>
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Carousel  -->
+    <div class="first_section">
+      <div class="container">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row align-items-center">
+                <div class="col-sm-6">
+                  <h1>Macbook Pro</h1>
+                  <p>
+                    The MacBook Pro is a line of high-performance laptops designed by Apple, known for its sleek design, 
+                    Retina display, and powerful hardware configurations, catering to professionals and creative users. 
+                    It often features cutting-edge technology, including Apple's custom M1 or Intel processors.
+                  </p>
+                  <button class="button_in_carousel">Buy Now →</button>
+                </div>
+                <div class="col-sm-6">
+                  <img
+                    src="images/banner-products/product-1.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-sm-6">
+                  <h1>Alexa Assistant</h1>
+                  <p>
+                    Alexa is a virtual assistant developed by Amazon, integrated into devices like Echo speakers. 
+                    It responds to voice commands, providing information, controlling smart home devices, 
+                    and performing various tasks using natural language processing.
+                  </p>
+                  <button class="button_in_carousel">Buy Now →</button>
+                </div>
+                <div class="col-sm-6">
+                  <img
+                    src="images/banner-products/slider-1.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-sm-6">
+                  <h1>Bluetooth Speaker</h1>
+                  <p>
+                    Portable audio device that wirelessly connects to devices like smartphones or tablets, 
+                    allowing users to stream music or other audio content. 
+                    It uses Bluetooth technology for seamless connectivity without the need for physical cables.
+                  </p>
+                  <button class="button_in_carousel">Buy Now →</button>
+                </div>
+                <div class="col-sm-6">
+                  <img
+                    src="images/banner-products/slider-3.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+
+  <!-- Scrollable Bottom Ticker  -->      
+  <div class="ticker">
+    <div class="title">
+      WW World
+    </div>
+    
+    <ul>
+      <li id="displayDate"></li>
+      
+      <li id="displayTime"></li>
+      
+      <li id="displayLocation"></li>
+      
+      <li>
+        Upcoming Event: Black Friday
+      </li>
+      
+        <li>
+          Follow our socials and join our newsletter to be updated
+        </li>
+    </ul>
+  </div>
+
+    <!-- Brands Section  -->
+    <div class="container" id="categories">
+      <h3 class="categories">Top Brands</h3>
+      <hr id="cat_hr" />
+      <div class="row cat align-items-center">
+        <div class="col-sm-3">
+          <div class="card cat_bag">
+            <img
+              src="images/Categories/apple.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Apple</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card cat_beauty">
+            <img
+              src="images/Categories/xiaomi.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Xiaomi</h5>
+            </div>
+          </div>
+          <div class="card cat_shoe">
+            <img
+              src="images/Categories/samsung.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Samsung</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 cat_busket">
+          <img
+            src="images/Categories/order.png"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Samrtphone Section  -->
+    <div class="container" id="smartphone">
+      <div class="d-flex justify-content-between section_title">
+        <h3 class="title">Smartphone</h3>
+        <a href="#"><h4>See All</h4></a>
+      </div>
+
+      <div class="card-deck">
+        <div class="card">
+          <img
+            src="images/phone/phone-1.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">MI Redmi Pro</h5>
+            <p class="card-text">
+              Best quality phones in affordable price. Best quality phones in
+              affordable price.
+            </p>
+            <h5>$430</h5>
+            <button>Buy Now →</button>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="images/phone/phone-2.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Iphone 11</h5>
+            <p class="card-text">
+              Best quality phones in affordable price. Best quality phones in
+              affordable price.
+            </p>
+            <h5>$840</h5>
+            <button>Buy Now →</button>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="images/phone/phone-3.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Samsung Note Pro</h5>
+            <p class="card-text">
+              Best quality phones in affordable price. Best quality phones in
+              affordable price.
+            </p>
+            <h5>$730</h5>
+            <button>Buy Now →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Laptop Section  -->
+    <div class="container" id="laptop">
+      <div class="d-flex justify-content-between section_title">
+        <h3 class="title">Laptop</h3>
+        <a href="#"><h4>See All</h4></a>
+      </div>
+
+      <div class="card-deck">
+        <div class="card">
+          <img
+            src="images/laptop/product-1.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Asus Vivobook</h5>
+            <p class="card-text">
+              Best quality laptop in affordable price. Best quality laptop in
+              affordable price.
+            </p>
+            <h5>$999</h5>
+            <button>Buy Now →</button>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="images/laptop/product-2.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Razer Blade i5</h5>
+            <p class="card-text">
+              Best quality laptop in affordable price. Best quality laptop in
+              affordable price.
+            </p>
+            <h5>$1789</h5>
+            <button>Buy Now →</button>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="images/laptop/product-3.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">MI Notebook Pro</h5>
+            <p class="card-text">
+              Best quality laptop in affordable price. Best quality laptop in
+              affordable price.
+            </p>
+            <h5>$1530</h5>
+            <button>Buy Now →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <hr />
+
+
+    
+
+    <div class="container footer">
+      <div class="row">
+        <div class="col-sm-4 d-flex flex-column bd-highlight mb-3">
+          <h4>Quick Links</h4>
+          <a href="#">FAQ</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Refund Policy</a>
+        </div>
+        <div class="col-sm-4">
+          <h4>Contact Info</h4>
+          <p>Address: Surulere, Lagos Nigeria.</p>
+          <p>Phone: +08023456789</p>
+          <p>Email: WWorld@gmail.com</p>
+        </div>
+        <div class="col-sm-4">
+          <h4>Follow Us</h4>
+          <div class="social-icon-section">
+            <div class="social-icon">
+              <a href="#" class="fa fa-facebook"></a>
+            </div>
+            <div class="social-icon">
+              <a href="#" class="fa fa-twitter"></a>
+            </div>
+            <div class="social-icon">
+              <a href="#" class="fa fa-linkedin"></a>
+            </div>
+            <div class="social-icon">
+              <a href="#" class="fa fa-instagram"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>©2023, Wireless World, All Rights Reserved, Surulere, Lagos Nigria</p>
+    </footer>
+
+    <!-- JavaScript Scripts -->
+    <script src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
